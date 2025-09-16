@@ -10,8 +10,8 @@ services:
       MYSQL_DATABASE: guacamole_db
       MYSQL_USER: guacamole_user
       MYSQL_PASSWORD: guac_pass
-  volumes:
-    - guac_db_data:/var/lib/mysql
+    volumes:
+      - guac_db_data:/var/lib/mysql
 
   guacamole:
     image: guacamole/guacamole
